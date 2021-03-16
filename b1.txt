@@ -1,0 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Chuong1_2;
+
+/**
+ *
+ * @author ADMIN
+ */
+import java.util.Scanner;
+public class Bai1_TongPS {
+    public static void main(String[] args) {
+        Scanner dt = new Scanner(System.in);
+        System.out.println("nhap n: ");
+        int so = dt.nextInt();
+        TONGPS(so);
+    }
+    public static void TONGPS(int so) {
+        float tong =0;
+        for(int i=1; i<=so; i++)
+            tong = tong + 1/(float)i;
+        System.out.printf("tong phan so = %.2f", tong);
+    }
+}
